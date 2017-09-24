@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JMeter</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+<h2 id = "displayinfo">Shwetha Lathi - 1001192139 - Cloud Computing</h2>
+<h1 id = "message">Assignment 7</h1>
+  <div>
+
+			<form action="/upload" method ="post" enctype = "multipart/form-data">
+                <fieldset>
+                    <legend ><h1 class="blue2">Upload</h1></legend>
+					 Upload file: <input type="file" name="file" value="file" class="blue">
+					 <br> <br>
+					 <input type="submit" id="sub1" value="Upload" name="upload" class='description'>
+                 <br> <br>
+                 {{ text2 }}
+                </fieldset>
+			</form>
+			<form action="/download" method="get" enctype = "multipart/form-data">
+									<h2>Download</h2>
+				Download image: <input type="text" name="dwnldfile" placeholder="Enter Filename">
+					<input type="submit" value="Download">
+
+			</form>
+			<form action="/lifiles" method="get" enctype = "multipart/form-data">
+									<h2>View List of Files</h2>
+					<input type="submit" value="View">
+
+			</form>
+
+	</div>
+<div>
+	<br>
+	<br>
+</div>
+    <div>
+
+
+				<form action="/view" method="post" enctype = "multipart/form-data">
+                     <fieldset>
+                    <legend ><h1 class="blue2">View all pictures</h1></legend>
+					<input type="submit" value="View" class='description'>
+					<br> <br>
+                     </fieldset>
+				</form>
+	</div>
+<div>
+	<br>
+	<br>
+</div>
+
+    <div>
+
+				<form action="/delete" method="get" enctype = "multipart/form-data">
+                     <fieldset>
+                    <legend ><h1 class="blue2">Delete</h1></legend>
+										<input type="submit" id=" sub1" value="Delete" class='description'>
+                     	<br> <br>
+                     </fieldset>
+                </form>
+	</div>
+<div>
+	<br>
+	<br>
+</div>
+    <div>
+
+				<form action="/logout" method="get" enctype = "multipart/form-data">
+                     <fieldset>
+                 <button type="submit">Logout</button>
+                     </fieldset>
+                </form>
+	</div>
+</body>

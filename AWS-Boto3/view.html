@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>View Images</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+.floating-box {float:left;margin: 10px;}
+.container {
+    padding: 16px;
+}
+
+</style>
+<body>
+<h3>Images</h3>
+			<form action="/back" method="get" enctype = "multipart/form-data">
+			<input type="submit" id=" sub1" value="Go back" class='description'>
+      <br> <br>
+      </form>
+{%for item in lists%}
+{%with img="https://s3.us-east-2.amazonaws.com/a3files/"+item, form_action = "/view/"+item %}
+<form action={{form_action}} method ="post" enctype = "multipart/form-data">
+<div class="floating-box">
+ <img src= {{img}} style="width=200px;height:200px;">
+			<div>
+      <br>
+			<input type="text" name="imgname" value={{item}}>
+      <input type = "text" name="com">
+			<input type="submit" value="Comment" ><br></div>
+
+      </div></form>
+			{% endwith %}
+	{% endfor %}
+</body>
+</html>

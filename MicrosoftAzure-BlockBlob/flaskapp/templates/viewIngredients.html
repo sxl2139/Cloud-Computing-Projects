@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>View Images</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+.floating-box {float:left;margin: 10px;}
+.container {
+    padding: 16px;
+}
+
+</style>
+<body>
+<h2>Shwetha Lathi - 1001192139 - Quiz8 - Cloud Computing</h2>
+{{timeTaken}} seconds was taken.
+<br>
+<h3>Images</h3>
+      <br> <br>
+      </form>
+{%for item in lists%}
+{%with img="https://q7resourcediag254.blob.core.windows.net/"+container+"/"+item%}
+<form method ="post" enctype = "multipart/form-data">
+<div class="floating-box">
+ <img src= {{img}} style="width=200px;height:200px;">
+                        <div>
+      <br>
+                        <input type="text" name="imgname" value={{item}}>
+                        <br></div>
+                        {{ingredients}}
+      </div></form>
+                        {% endwith %}
+        {% endfor %}
+</body>
+</html>

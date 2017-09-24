@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hadoop - Mappers and Reducers</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+</style>
+<body>
+<div>
+	<h1>Shwetha Lathi - 1001192139 - Cloud Computing</h1>
+
+	<h2 id = "message">Assignment 6</h2>
+</div>
+
+<div>
+			<form action="/findno" method ="post" enctype = "multipart/form-data">
+         Enter Number of Mappers:<input type="text" value="" name="map" class="blue"></input>
+         Enter Number of Reducers:<input type="text" value="" name="red" class="blue"></input>
+          <button type="submit"  value="Submit" name="Submit" class='description'>Submit</button>
+					<br><br>
+     </form>
+     <form action="/findinp" method ="post" enctype = "multipart/form-data">
+         Enter Number of Mappers:<input type="text" value="" name="map1" class="blue"></input>
+         Enter Number of Reducers:<input type="text" value="" name="red1" class="blue"></input>
+        Age1:<input type="text" value="" name="arg1" class="blue"></input>
+				Age2:<input type="text" value="" name="arg2" class="blue"></input>
+	<button type="submit"  value="Submit" name="Submit" class='description'>Submit</button>
+                                        <br><br>
+     </form>
+		 <form action="/graph" method ="post" enctype = "multipart/form-data">
+				 <button type="submit"  value="Submit" name="Submit" class='description'>Scatter graph</button>
+				 <br><br>
+		</form>
+
+</div>
+
+</body>
+</html>

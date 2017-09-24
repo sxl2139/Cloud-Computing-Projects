@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 2px solid black;
+	width:30%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.loginDiv {
+    padding: 16px;
+}
+</style>
+<body>
+<h2>Shwetha Lathi - 1001192139 - Cloud Computing - Quiz8</h2>
+<h2>Login Form</h2>
+
+<form action="/login" method ="post" enctype = "multipart/form-data">
+   <div class="loginDiv">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Password" name="pwd" required>
+
+    <button type="submit">Login</button>
+    {{txt1}}
+   </div>
+ </form>
+
+</body>
+</html>
+
+
